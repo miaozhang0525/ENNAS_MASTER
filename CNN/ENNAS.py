@@ -771,14 +771,9 @@ searcher = Random_NAS(B, model, args.seed, save_dir)
 logging.info('budget: %d' % (searcher.B))
 if not args.eval_only:
     searcher.run()
-    #archs = searcher.get_eval_arch()###random search based model selection
-    archs1 = searcher.EA_arch_search(num_pop=100,num_ite=60,num_cross=60,num_mutation=40)###evolutionart algorithm based model selection
-    archs2 = searcher.EA_arch_search(num_pop=100,num_ite=60,num_cross=60,num_mutation=40)###evolutionart algorithm based model selection
-    archs3 = searcher.EA_arch_search(num_pop=100,num_ite=60,num_cross=60,num_mutation=40)###evolutionart algorithm based model selection
-    archs4 = searcher.EA_arch_search(num_pop=100,num_ite=60,num_cross=60,num_mutation=40)###evolutionart algorithm based model selection
-    archs5 = searcher.EA_arch_search(num_pop=100,num_ite=60,num_cross=60,num_mutation=40)###evolutionart algorithm based model selection
-    archs6 = searcher.EA_arch_search(num_pop=100,num_ite=60,num_cross=60,num_mutation=40)###evolutionart algorithm based model selection
-
+    archs = searcher.get_eval_arch()###random search based model selection
+    #archs1 = searcher.EA_arch_search(num_pop=100,num_ite=60,num_cross=60,num_mutation=40)###evolutionart algorithm based model selection
+    
 
 else:
     np.random.seed(args.seed+1)
@@ -789,9 +784,3 @@ with open('/tmp/arch','w') as f:
     f.write(arch)
 
        
-print(archs1)
-print(archs2)
-print(archs3)
-print(archs4)
-print(archs5)
-print(archs6)
