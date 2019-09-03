@@ -34,7 +34,7 @@ cd CNN && python test_imagenet.py --auxiliary --model_path ./ENNAS_ImageNet/mode
 * The results could be found in ./ENNAS_ImageNet/log.txt
 
 
-#######################
+###############################################
 * Test on PTB
 
 cd RNN && python test.py --model_path ./ENNAS_RESULT_ON_PTB/model.pt
