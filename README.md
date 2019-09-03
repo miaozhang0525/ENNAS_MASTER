@@ -36,14 +36,15 @@ The results could be found in ./ENNAS_ImageNet/log.txt
 
 ###############################################
 * Test on PTB
-** ENNAS without PR
+
+* ENNAS without PR
 ```
 cd RNN && python test.py --model_path ./ENNAS_RESULT_ON_PTB/model.pt
 ```
 Expected result: 57.82 test perplexity with 23M model params.
 The results could be found in ./ENNAS_RESULT_ON_PTB/log.txt
 
-** ENNAS with PR
+* ENNAS with PR
 ```
 cd RNN && python test.py --model_path ./ENNAS_PR_RESULT_ON_PTB/model.pt
 ```
