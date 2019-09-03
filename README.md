@@ -49,7 +49,7 @@ cd RNN && python test.py --model_path ./ENNAS_PR_RESULT_ON_PTB/model.pt
 
 
 * Test on WT2
-
+```
 cd RNN && python test.py --data /data/mzhang3/ENNAS_master/data/wikitext-2 --dropouth 0.15 --emsize 700 --nhidlast 700 --nhid 700 --wdecay 5e-7 --model_path ./ENNAS_WT2RESULT2/model.pt
 ```
 * Expected result: 71.56 test perplexity with 33M model params.
@@ -71,7 +71,7 @@ cd CNN && python train.py --auxiliary --cutout            # CIFAR-10
 cd RNN && python train.py                                 # PTB
 cd CNN && python train_imagenet.py --auxiliary            # ImageNet
 cd RNN && python train.py --data ./data/wikitext-2 --dropouth 0.15 --emsize 700 --nhidlast 700 --nhid 700 --wdecay 5e-7  # WT2
-
+```
 
 ## Architecture Visualization
 
