@@ -36,11 +36,12 @@ cd CNN && python test_imagenet.py --auxiliary --model_path ./ENNAS_ImageNet/mode
 
 ###############################################
 * Test on PTB
-
+```
 cd RNN && python test.py --model_path ./ENNAS_RESULT_ON_PTB/model.pt
-
 ```
 * Expected result: 57.82 test perplexity with 23M model params.
+* The results could be found in ./ENNAS_RESULT_ON_PTB/log.txt
+
 
 cd RNN && python test.py --model_path ./ENNAS_PR_RESULT_ON_PTB/model.pt
 ```
