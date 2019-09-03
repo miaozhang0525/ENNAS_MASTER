@@ -57,12 +57,14 @@ cd RNN && python test.py --data /data/mzhang3/ENNAS_master/data/wikitext-2 --dro
 
 
 ## Architecture search (using small proxy models)
+
 ```
 cd CNN && python ENNAS.py    # for conv cells on CIFAR-10
 cd RNN && python ENNAS.py    # for recurrent cells on PTB
 ```
 
 ## Architecture evaluation (using full-sized models)
+
 To evaluate our best cells by training from scratch, run
 ```
 cd CNN && python train.py --auxiliary --cutout            # CIFAR-10
@@ -72,6 +74,7 @@ cd RNN && python train.py --data ./data/wikitext-2 --dropouth 0.15 --emsize 700 
 
 
 ## Architecture Visualization
+
 Package graphviz is required to visualize the learned cells
 ```
 cd CNN && python visualize.py ENNAS
