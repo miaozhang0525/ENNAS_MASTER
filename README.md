@@ -9,7 +9,7 @@ Python == 3.6.5, PyTorch == 1.0.1.post2
 
 * Test on CIFAR10
 
-model with 600 training epochs
+* model with 600 training epochs
 ```
 cd CNN && python test.py --auxiliary --model_path ./ENNAS_CIFAR_RESULT/cifar10_600.pt
 ```
@@ -17,7 +17,7 @@ Expected result: 2.64% test error rate with 3.08M model params.
 The results could be found in ./ENNAS_CIFAR_RESULT/log.txt
 
 
-model with 1000 training epochs
+* model with 1000 training epochs
 ```
 cd CNN && python test.py --auxiliary --model_path ./ENNAS_CIFAR_RESULT_1000/cifar10_1000.pt
 
@@ -36,14 +36,14 @@ The results could be found in ./ENNAS_ImageNet/log.txt
 
 ###############################################
 * Test on PTB
-ENNAS without PR
+** ENNAS without PR
 ```
 cd RNN && python test.py --model_path ./ENNAS_RESULT_ON_PTB/model.pt
 ```
 Expected result: 57.82 test perplexity with 23M model params.
 The results could be found in ./ENNAS_RESULT_ON_PTB/log.txt
 
-ENNAS with PR
+** ENNAS with PR
 ```
 cd RNN && python test.py --model_path ./ENNAS_PR_RESULT_ON_PTB/model.pt
 ```
