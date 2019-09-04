@@ -60,14 +60,14 @@ Expected result: 71.56 test perplexity with 33M model params.
 The results could be found in ./ENNAS_WT2RESULT2/log.txt
 
 
-## Architecture search (using small proxy models)
+## Architecture search
 
 ```
 cd CNN && python ENNAS.py    # for conv cells on CIFAR-10
 cd RNN && python ENNAS.py    # for recurrent cells on PTB
 ```
 
-## Architecture evaluation (using full-sized models)
+## Architecture evaluation
 
 To evaluate our best cells by training from scratch, run
 ```
