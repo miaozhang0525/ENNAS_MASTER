@@ -22,16 +22,12 @@ The results could be found in ./ENNAS_CIFAR_RESULT/log.txt
 cd CNN && python test.py --auxiliary --model_path ./ENNAS_CIFAR_RESULT_1000/cifar10_1000.pt
 
 ```
-Expected result: 2.51% test error rate with 3.08M  model params.
-The results could be found in ./ENNAS_CIFAR_RESULT_1000/log.txt
 
 * Test on ImageNet
 ```
 cd CNN && python test_imagenet.py --auxiliary --model_path ./ENNAS_ImageNet/model_best.pth.tar
 
 ```
-Expected result: 27.08% top1 test error rateand 8.8% top5 test error rate  with 4.5M  model params.
-The results could be found in ./ENNAS_ImageNet/log.txt
 
 
 ###############################################
@@ -41,23 +37,18 @@ The results could be found in ./ENNAS_ImageNet/log.txt
 ```
 cd RNN && python test.py --model_path ./ENNAS_RESULT_ON_PTB/model.pt
 ```
-Expected result: 57.82 test perplexity with 23M model params.
-The results could be found in ./ENNAS_RESULT_ON_PTB/log.txt
+
 
 * ENNAS with PR
 ```
 cd RNN && python test.py --model_path ./ENNAS_PR_RESULT_ON_PTB/model.pt
 ```
-Expected result: 57.36 test perplexity with 23M model params.
-The results could be found in ./ENNAS_PR_RESULT_ON_PTB/log.txt
 
 
 * Test on WT2
 ```
 cd RNN && python test.py --data /data/mzhang3/ENNAS_master/data/wikitext-2 --dropouth 0.15 --emsize 700 --nhidlast 700 --nhid 700 --wdecay 5e-7 --model_path ./ENNAS_WT2RESULT2/model.pt
 ```
-Expected result: 71.56 test perplexity with 33M model params.
-The results could be found in ./ENNAS_WT2RESULT2/log.txt
 
 
 ## Architecture search
